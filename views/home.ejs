@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<h1 style="text-align: center;">Form</h1>
+    <form action="/submit" method="POST">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="name" required>
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input type="text" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="value">Value:</label>
+            <input type="text" id="value" name="value" required>
+        </div>
+        <hr>
+        <!-- <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+        <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a> -->
+
+        <br>
+        <button type="submit">Submit</button>
+        <hr>
+        <div>
+            <label for="decision">Decision:</label>
+            <select id="decision" name="decision" required>
+                <option value="">Select decision</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        
+    </form>
+
+<%- include('partials/footer') %>
+
